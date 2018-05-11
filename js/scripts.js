@@ -1,9 +1,10 @@
+var a = 5/7;
+var b = 18/25;
 
-// below is a ternary operator ie: a>b ? -- it is the equivalent of an if statement
-function findBiggestFraction(a, b){
-  a>b ? console.log("a: ", a) : console.log("b: ", b);
+var theBiggest = function(){
+  var result;
+  a>b ? result = ["a", a] : result = ["b", b];
+  console.log(result);
 }
-var firstFraction = 3/4;
-var secondFraction = 5/7;
 
-findBiggestFraction(firstFraction, secondFraction);
+theBiggest();
